@@ -8,6 +8,7 @@ p {
   --main-navy-blue-110-a-1-d: #110a1d;
   --main-clean-white-ffffff: #fff;
   --additional-purple-9-dadf-2: #9dadf2;
+  --transp-white-white-60: rgba(255, 255, 255, 0.6);
 }
 
 html {
@@ -89,13 +90,16 @@ body {
   border-radius: 24px;
   border: 2px solid var(--additional-purple-9-dadf-2);
   background: var(--main-navy-blue-110-a-1-d);
-  color: var(--main-clean-white-ffffff);
-  font-family: "Lexend", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 1px;
   cursor: pointer;
+}
+
+.button__text {
+  color: var(--main-clean-white-ffffff);
+  font-family: "Lexend", sans-serif;
+  font-style: normal;
 }
 
 .button_active {
@@ -104,21 +108,21 @@ body {
 }
 
 .main {
+  position: relative;
   background: var(--main-navy-blue-110-a-1-d);
   overflow: hidden;
 }
 
 .main__wrapper {
-  position: relative;
   max-width: 1920px;
-  height: 1048px;
+  /* height: 1048px; */
   margin: 0 auto;
   padding: 0 140px;
 }
 
 .banner-area {
   height: 100%;
-  margin-top: 112px;
+  /* margin-top: 112px; */
   background: url("./assets/Mask\ Area.png");
 }
 
@@ -151,4 +155,55 @@ body {
   opacity: 0.55;
   -webkit-filter: blur(150px);
   filter: blur(150px);
+}
+
+.title-block {
+  margin-top: 24.87%;
+  max-width: 669px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.title-block__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  font-weight: 500;
+}
+
+.title {
+  margin: 0;
+  font-size: 9.6rem;
+  line-height: 96px;
+  color: var(--main-clean-white-ffffff);
+}
+
+.colortext {
+  color: var(--main-blue-478-bf-9);
+}
+
+.text {
+  font-size: 3.2rem;
+  line-height: 32px;
+  color: var(--transp-white-white-60);
+}
+
+.title-block__button {
+  display: flex;
+  padding: 20px 72px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 48px;
+  background: var(--main-blue-478-bf-9);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 32px;
+  cursor: pointer;
 }
