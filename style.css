@@ -115,16 +115,30 @@ body {
 
 .main__wrapper {
   max-width: 1920px;
-  /* height: 1048px; */
-  margin: 0 auto;
+  margin: auto;
   padding: 0 140px;
 }
 
 .banner-area {
-  height: 100%;
-  /* margin-top: 112px; */
-  background: url("./assets/Mask\ Area.png");
+  margin-top: 112px;
+  height: 1048px;
+  display: flex;
 }
+
+/* .main::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  z-index: 2;
+} */
 
 .light-area_circle {
   position: absolute;
@@ -158,7 +172,7 @@ body {
 }
 
 .title-block {
-  margin-top: 24.87%;
+  margin-top: 296px;
   max-width: 669px;
   display: flex;
   flex-direction: column;
@@ -206,4 +220,28 @@ body {
   font-weight: 600;
   line-height: 32px;
   cursor: pointer;
+}
+
+.banner-block {
+  position: relative;
+  margin-top: -39px;
+  margin-left: 42px;
+  display: flex;
+  gap: 18px;
+}
+
+.first-line,
+.second-line,
+.third-line {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.second-line {
+  margin-top: 47px;
+}
+
+.third-line {
+  margin-top: 39px;
 }
