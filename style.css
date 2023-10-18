@@ -9,6 +9,8 @@ p {
   --main-clean-white-ffffff: #fff;
   --additional-purple-9-dadf-2: #9dadf2;
   --transp-white-white-60: rgba(255, 255, 255, 0.6);
+  --main-deep-blue-1-e-1231: #1e1231;
+  --transp-white-white-60: rgba(255, 255, 255, 0.6);
 }
 
 html {
@@ -240,21 +242,21 @@ body {
 }
 
 .first-line {
-  -webkit-animation: first-animation 7s infinite linear;
-  animation: first-animation 7s infinite linear;
+  -webkit-animation: first-animation 10s infinite linear;
+  animation: first-animation 10s infinite linear;
   opacity: 0.2;
 }
 
 .second-line {
-  -webkit-animation: second-animation 7s infinite linear;
-  animation: second-animation 7s infinite linear;
+  -webkit-animation: second-animation 10s infinite linear;
+  animation: second-animation 10s infinite linear;
   margin-top: 47px;
   opacity: 0.6;
 }
 
 .third-line {
-  -webkit-animation: third-animation 7s infinite linear;
-  animation: third-animation 7s infinite linear;
+  -webkit-animation: third-animation 10s infinite linear;
+  animation: third-animation 10s infinite linear;
   margin-top: 39px;
   opacity: 0.4;
 }
@@ -329,4 +331,84 @@ body {
   100% {
     margin-top: 39px;
   }
+}
+
+.blog-block {
+  width: 32.38%;
+  margin-top: 140px;
+  margin-left: 65px;
+}
+
+.blog-block__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.blog-block__title {
+  margin: 0;
+  color: var(--main-clean-white-ffffff);
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.blog-block__articles {
+  height: 595px;
+  align-self: stretch;
+  border-radius: 100px;
+  border: 3px solid var(--main-blue-478-bf-9);
+  background: var(--transp-white-white-12);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.articles__wrapper {
+  display: flex;
+  width: 87.9%;
+  margin-top: 4.5%;
+  margin-left: 4.5%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  /* overflow: hidden; */
+}
+
+.articles__item {
+  display: flex;
+  padding: 16px 64px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 196px;
+  background: var(--main-deep-blue-1-e-1231);
+}
+
+.activ-item {
+  background: var(--main-blue-478-bf-9);
+}
+
+.articles__item__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  align-self: stretch;
+}
+
+.articles__item__text {
+  color: var(--main-clean-white-ffffff);
+  font-size: 2.4rem;
+  line-height: 116.667%;
+}
+
+.articles__item__date {
+  color: var(--transp-white-white-60);
+  font-feature-settings: "liga" off;
+  font-family: Futura PT;
+  font-size: 1.4rem;
+  font-weight: 450;
+  line-height: 114.286%;
 }
